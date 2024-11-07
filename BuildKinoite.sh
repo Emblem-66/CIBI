@@ -10,6 +10,7 @@ bash <(curl -s https://raw.githubusercontent.com/Emblem-66/CIBI/refs/heads/main/
 bash <(curl -s https://raw.githubusercontent.com/Emblem-66/CIBI/refs/heads/main/scripts/system/just.sh)
 
 bash <(curl -s https://raw.githubusercontent.com/Emblem-66/CIBI/refs/heads/main/scripts/kinoite/debloat.sh)
+bash <(curl -s https://raw.githubusercontent.com/Emblem-66/CIBI/refs/heads/main/scripts/kinoite/packages.sh)
 
 bash <(curl -s https://raw.githubusercontent.com/Emblem-66/CIBI/refs/heads/main/scripts/application/steam.sh)
 bash <(curl -s https://raw.githubusercontent.com/Emblem-66/CIBI/refs/heads/main/scripts/application/bottles.sh)
