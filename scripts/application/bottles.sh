@@ -12,5 +12,6 @@ rpm -q rpmfusion-free-release rpmfusion-nonfree-release || rpm-ostree install ${
 
 install_packages=(
     "bottles"
+"goverlay"
 )
 rpm -q ${install_packages[@]} || rpm-ostree install ${install_packages[@]}
