@@ -1,2 +1,1 @@
-# CIBI
-Custom Image Build Instructions
+# CIBI - Custom Image Build Instructions
