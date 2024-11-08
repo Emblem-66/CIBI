@@ -13,6 +13,9 @@ install_packages=(
 "gnome-shell-extension-caffeine"
 "gnome-tweaks"
 "ffmpegthumbnailer"
+"clapper"
+"text-editor"
+"loupe"
 )
 rpm -q ${install_packages[@]} || rpm-ostree install ${install_packages[@]}
 
