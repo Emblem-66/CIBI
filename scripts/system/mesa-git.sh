@@ -11,14 +11,14 @@ repo=(
 )
 
 mesa_packages=(
-    "mesa-filesystem"
-    "mesa-libgbm"
-    "mesa-libglapi"
-    "mesa-dri-drivers"
-    "mesa-libEGL"
-    "mesa-libGL"
-    "mesa-vulkan-drivers"
-    "mesa-va-drivers"
+"mesa-filesystem"
+"mesa-libgbm"
+"mesa-libglapi"
+"mesa-dri-drivers"
+"mesa-libEGL"
+"mesa-libGL"
+"mesa-vulkan-drivers"
+"mesa-va-drivers"
 )
 
 rpm-ostree override replace --experimental --from repo=${repo[@]} ${mesa_packages[@]}
