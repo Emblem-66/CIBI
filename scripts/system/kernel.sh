@@ -16,16 +16,18 @@ rpmfusion=(
 #rpm -q rpmfusion-free-release rpmfusion-nonfree-release || rpm-ostree install ${rpmfusion[@]}
 
 install_packages=(
-    "kernel-cachyos"
+"kernel-cachyos"
 )
 #rpm -q ${install_packages[@]} || rpm-ostree install ${install_packages[@]}
 
 remove_packages=(
-    "kernel"
-    "kernel-core"
-    "kernel-modules"
-    "kernel-modules-core"
-    "kernel-modules-extra"
+"kernel"
+"kernel-core"
+"kernel-modules"
+"kernel-modules-core"
+"kernel-modules-extra"
+"kernel-tools"
+"kernel-tools-libs"
 )
 #rpm -q ${remove_packages[@]} || rpm-ostree uninstall ${remove_packages[@]}
 
