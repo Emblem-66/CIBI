@@ -18,5 +18,6 @@ install_packages=(
 "marknote"
 "krusader"
 "calligra"
+"qtpass"
 )
 rpm -q ${install_packages[@]} || rpm-ostree install ${install_packages[@]}
