@@ -19,5 +19,6 @@ install_packages=(
 "krusader"
 "calligra"
 "qtpass"
+"dragon"
 )
 rpm -q ${install_packages[@]} || rpm-ostree install ${install_packages[@]}
