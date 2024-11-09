@@ -10,15 +10,11 @@ rpm -q rpmfusion-free-release rpmfusion-nonfree-release || rpm-ostree install ${
 
 install_packages=(
 "haruna"
-"amarok"
 "qview"
 "gwenview"
 "okular"
 "kompare"
 "marknote"
 "krusader"
-"calligra"
-"qtpass"
-"dragon"
 )
 rpm -q ${install_packages[@]} || rpm-ostree install ${install_packages[@]}
