@@ -10,6 +10,7 @@ rpm -q rpmfusion-free-release rpmfusion-nonfree-release || rpm-ostree install ${
 
 install_packages=(
 "haruna"
+"amarok"
 "krusader"
 "qview"
 "gwenview"
