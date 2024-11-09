@@ -11,6 +11,7 @@ rpm -q rpmfusion-free-release rpmfusion-nonfree-release || rpm-ostree install ${
 install_packages=(
     "ibm-plex-fonts-all"
     "rsms-inter-fonts"
+    "levien-inconsolata-fonts"
 )
 
 remove_packages=(
