@@ -14,7 +14,7 @@ install_packages=(
 "gnome-tweaks"
 "ffmpegthumbnailer"
 "clapper"
-"text-editor"
+"texteditor"
 "loupe"
 )
 rpm -q ${install_packages[@]} || rpm-ostree install ${install_packages[@]}
