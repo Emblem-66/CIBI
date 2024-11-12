@@ -12,6 +12,8 @@ remove_packages=(
 "kf6-kwallet-libs"
 "kwalletmanager5"
 "pam-kwallet"
+"plasma-welcome"
+"plasma-welcome-fedora"
 )
 
 rpm -q ${remove_packages[@]} || rpm-ostree uninstall ${remove_packages[@]}
