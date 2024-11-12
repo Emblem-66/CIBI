@@ -13,3 +13,5 @@ install_packages=(
 "goverlay"
 )
 rpm -q ${install_packages[@]} || rpm-ostree install ${install_packages[@]}
+
+sudo sed -i 's///' /etc/share/applications/steam.desktop
