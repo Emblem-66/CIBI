@@ -13,5 +13,8 @@ rpm -q rpmfusion-free-release rpmfusion-nonfree-release || rpm-ostree install ${
 install_packages=(
 "bottles"
 "goverlay"
+"mangohud"
+"gamemode"
+"vkbasalt"
 )
 rpm -q ${install_packages[@]} || rpm-ostree install ${install_packages[@]}
