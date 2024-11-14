@@ -13,7 +13,7 @@ install_packages=(
 "goverlay"
 "mangohud"
 "gamemode"
-"vkbasalt"
+"vkBasalt"
 )
 rpm -q ${install_packages[@]} || rpm-ostree install ${install_packages[@]}
 
