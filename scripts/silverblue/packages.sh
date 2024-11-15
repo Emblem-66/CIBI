@@ -17,6 +17,7 @@ install_packages=(
 "gnome-text-editor"
 "loupe"
 )
-rpm -q ${install_packages[@]} || rpm-ostree install ${install_packages[@]}
+#rpm -q ${install_packages[@]} || rpm-ostree install ${install_packages[@]}
+rpm-ostree install --idempotent --force-replacefiles ${install_packages[@]}
 
 git clone https://github.com/mukul29/legacy-theme-auto-switcher-gnome-extension.git /usr/share/gnome-shell/extensions/legacyschemeautoswitcher@joshimukul29.gmail.com
