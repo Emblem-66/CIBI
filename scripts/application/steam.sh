@@ -15,6 +15,8 @@ install_packages=(
 "gamemode"
 "vkBasalt"
 )
-rpm -q ${install_packages[@]} || rpm-ostree install ${install_packages[@]}
+#rpm -q ${install_packages[@]} || rpm-ostree install  --force-replacefiles ${install_packages[@]}
+
+rpm-ostree install  --idempotent --force-replacefiles ${install_packages[@]}
 
 sudo sed -i 's|Exec=/usr/bin/steam %U|Exec=gamemoderun /usr/bin/steam %U|' /etc/share/applications/steam.desktop
