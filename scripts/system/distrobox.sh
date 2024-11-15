@@ -29,7 +29,7 @@ ExecStart=distrobox-upgrade --all
 StandardOutput=null
 EOF
 
-cat <<EOF | sudo tee /etc/systemd/system/distrobox-upgrade.timere > /dev/null
+cat <<EOF | sudo tee /etc/systemd/system/distrobox-upgrade.timer > /dev/null
 [Unit]
 Description=distrobox-upgrade Automatic Update Trigger
 
