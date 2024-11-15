@@ -3,7 +3,6 @@
 set -ouex pipefail
 
 remove_packages=(
-"toolbox"
 "firefox"
 "firefox-langpacks"
 "gnome-classic-session"
