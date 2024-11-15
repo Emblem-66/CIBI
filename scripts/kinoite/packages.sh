@@ -16,5 +16,7 @@ install_packages=(
 "kompare"
 "marknote"
 "krusader"
+"ark"
 )
-rpm -q ${install_packages[@]} || rpm-ostree install ${install_packages[@]}
+#rpm -q ${install_packages[@]} || rpm-ostree install ${install_packages[@]}
+rpm-ostree install --idempotent --force-replacefiles ${install_packages[@]}
