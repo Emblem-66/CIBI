@@ -13,6 +13,6 @@ install_packages=(
 )
 rpm-ostree install ${install_packages[@]}
 
-cat <<EOF | sudo tee /etc/Justfile > /dev/null
+#cat <<EOF | sudo tee /etc/Justfile > /dev/null
 #justfile
-EOF
+#EOF
