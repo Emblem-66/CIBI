@@ -36,7 +36,7 @@ curl -s "${SYS}/distrobox.sh" | bash
 curl -s "${SYS}/just.sh" | bash
 
 # Silverblue scripts
-curl -s "${KN}debloat.sh" | bash
+curl -s "${KN}/debloat.sh" | bash
 curl -s "${KN}/packages.sh" | bash
 
 # Application scripts
