@@ -17,4 +17,5 @@ remove_packages=(
 "yelp-xsl"
 )
 
-rpm -q ${remove_packages[@]} || rpm-ostree uninstall ${remove_packages[@]}
+#rpm -q ${remove_packages[@]} || rpm-ostree uninstall ${remove_packages[@]}
+rpm-ostree install --idempotent --force-replacefiles ${remove_packages[@]}
