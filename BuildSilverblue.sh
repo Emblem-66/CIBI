@@ -35,11 +35,11 @@ curl -s "${SYS}/distrobox.sh" | bash
 curl -s "${SYS}/just.sh" | bash
 
 # Silverblue scripts
-curl -s "${BASE_URL}/silverblue/debloat.sh" | bash
-curl -s "${BASE_URL}/silverblue/packages.sh" | bash
+curl -s "${SB}/debloat.sh" | bash
+curl -s "${SB}/packages.sh" | bash
 
 # Application scripts
-#curl -s "${BASE_URL}/application/steam.sh" | bash
-#curl -s "${BASE_URL}/application/bottles.sh" | bash
+#curl -s "${APP}/steam.sh" | bash
+#curl -s "${APP}/bottles.sh" | bash
 
 rpm -qa | sort
