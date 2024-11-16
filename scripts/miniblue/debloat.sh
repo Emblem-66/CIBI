@@ -5,6 +5,8 @@ set -ouex pipefail
 remove_packages=(
 "firefox"
 "firefox-langpacks"
+"fedora-chromium-config-gnome"
+"fedora-chromium-config"
 "gnome-classic-session"
 "gnome-shell-extension-window-list"
 "gnome-shell-extension-background-logo"
