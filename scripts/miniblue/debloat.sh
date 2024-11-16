@@ -20,4 +20,4 @@ remove_packages=(
 )
 
 #rpm -q ${remove_packages[@]} || rpm-ostree uninstall ${remove_packages[@]}
-rpm-ostree uninstall --idempotent --force-replacefiles ${remove_packages[@]}
+rpm-ostree uninstall --idempotent ${remove_packages[@]}
