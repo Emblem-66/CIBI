@@ -25,5 +25,4 @@ rpm-ostree install --idempotent --force-replacefiles ${install_packages[@]}
 #rpm-ostree install --idempotent --force-replacefiles ${install_applications[@]}
 
 git clone https://github.com/mukul29/legacy-theme-auto-switcher-gnome-extension.git /usr/share/gnome-shell/extensions/legacyschemeautoswitcher@joshimukul29.gmail.com
-
-
+git clone https://github.com/joaophi/tailscale-gnome-qs.git /tmp && mv /tmp/tailscale@joaophi.github.com /usr/share/gnome-shell/extensions/
