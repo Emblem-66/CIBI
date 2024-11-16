@@ -12,6 +12,10 @@ rpm -q rpmfusion-free-release rpmfusion-nonfree-release || rpm-ostree install ${
 
 install_packages=(
 "prismlauncher"
+"goverlay"
+"mangohud"
+"gamemode"
+"vkBasalt"
 )
 rpm-ostree install --idempotent --force-replacefiles ${install_packages[@]}
 
