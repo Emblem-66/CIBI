@@ -15,19 +15,19 @@ rpm-ostree install --idempotent ${install_packages[@]}
 
 cat <<EOF | sudo tee /etc/Justfile > /dev/null
 
-flatpak-setup
+flatpak-setup:
     curl -s https://raw.githubusercontent.com/Emblem-66/just-scripts/refs/heads/main/flatpak-setup.sh | bash
 
-flatpak-apps
+flatpak-apps:
     curl -s https://raw.githubusercontent.com/Emblem-66/just-scripts/refs/heads/main/flatpak-APPS.sh | bash
 
-flatpak-kde-apps
+flatpak-kde-apps:
     curl -s https://raw.githubusercontent.com/Emblem-66/just-scripts/refs/heads/main/flatpak-GNOME.sh | bash
 
-flatpak-gnome-apps
+flatpak-gnome-apps:
     curl -s https://raw.githubusercontent.com/Emblem-66/just-scripts/refs/heads/main/flatpak-KDE.sh | bash
 
-gnome-setup
+gnome-setup:
     curl -s https://raw.githubusercontent.com/Emblem-66/just-scripts/refs/heads/main/gnome-setup.sh | bash
 
 EOF
