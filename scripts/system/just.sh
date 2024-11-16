@@ -13,4 +13,4 @@ install_packages=(
 )
 rpm-ostree install --idempotent ${install_packages[@]}
 
-curl -s https://raw.githubusercontent.com/Emblem-66/just-scripts/refs/heads/main/Justfile /etc/Justfile
+#curl -s https://raw.githubusercontent.com/Emblem-66/just-scripts/refs/heads/main/Justfile /etc/Justfile
