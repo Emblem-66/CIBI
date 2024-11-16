@@ -13,12 +13,16 @@ rpmfusion=(
 rpm -q rpmfusion-free-release rpmfusion-nonfree-release || rpm-ostree install ${rpmfusion[@]}
 
 install_packages=(
-    "heroic-games-launcher-bin"
+"heroic-games-launcher-bin"
+"goverlay"
+"mangohud"
+"gamemode"
+"vkBasalt"
 )
 rpm-ostree install --idempotent --force-replacefiles ${install_packages[@]}
 
 remove_packages=(
-    ""
+""
 )
 #rpm -q ${remove_packages[@]} || rpm-ostree uninstall ${remove_packages[@]}
 
