@@ -6,7 +6,7 @@ rpmfusion=(
     "https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm"
     "https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
 )
-rpm -q rpmfusion-free-release rpmfusion-nonfree-release || rpm-ostree install ${rpmfusion[@]}
+rpm-ostree install --idempotent --force-replacefiles ${rpmfusion[@]}
 
 install_packages=(
 "ffmpeg"
@@ -31,7 +31,7 @@ remove_packages=(
 "libswscale-free"
 )
 
-rpm-ostree uninstall ${remove_packages[@]}
-rpm-ostree install ${install_packages[@]}
+rpm-ostree uninstall --idempotent ${remove_packages[@]}
+rpm-ostree install --idempotent --force-replacefiles ${install_packages[@]}
 
 
