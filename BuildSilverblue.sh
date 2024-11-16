@@ -24,5 +24,7 @@ curl -s "${SB}/packages.sh" | bash
 # Application scripts
 curl -s "${APP}/steam.sh" | bash
 curl -s "${APP}/bottles.sh" | bash
+curl -s "${APP}/heroic.sh" | bash
+curl -s "${APP}/prismlauncher.sh" | bash
 
 rpm -qa | sort
