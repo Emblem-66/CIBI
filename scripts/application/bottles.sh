@@ -15,6 +15,6 @@ install_packages=(
 "goverlay"
 "mangohud"
 "gamemode"
-"vkbasalt"
+"vkBasalt"
 )
 rpm-ostree install --idempotent --force-replacefiles ${install_packages[@]}
