@@ -7,6 +7,7 @@ rpmfusion=(
     "https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
 )
 #rpm -q rpmfusion-free-release rpmfusion-nonfree-release || rpm-ostree install ${rpmfusion[@]}
+rpm-ostree install --idempotent --force-replacefiles ${rpmfusion[@]}
 
 install_packages=(
 "distrobox"
@@ -16,8 +17,8 @@ remove_packages=(
 "toolbox"
 )
 
-rpm-ostree uninstall ${remove_packages[@]}
-rpm-ostree install ${install_packages[@]}
+rpm-ostree uninstall --idempotent ${remove_packages[@]}
+rpm-ostree install --idempotent ${install_packages[@]}
 
 cat <<EOF | sudo tee /etc/systemd/system/distrobox-upgrade.service > /dev/null
 [Unit]
