@@ -16,6 +16,5 @@ remove_packages=(
 ""
 )
 
-#rpm-ostree uninstall ${remove_packages[@]}
-#rpm-ostree install ${install_packages[@]}
-
+#rpm-ostree uninstall --idempotent ${remove_packages[@]}
+#rpm-ostree install --idempotent ${install_packages[@]}
