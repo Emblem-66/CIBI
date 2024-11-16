@@ -3,7 +3,7 @@
 set -ouex pipefail
 
 SYS="https://raw.githubusercontent.com/Emblem-66/CIBI/refs/heads/main/scripts/system"
-SB="https://raw.githubusercontent.com/Emblem-66/CIBI/refs/heads/main/scripts/silverblue"
+MB="https://raw.githubusercontent.com/Emblem-66/CIBI/refs/heads/main/scripts/miniblue"
 APP="https://raw.githubusercontent.com/Emblem-66/CIBI/refs/heads/main/scripts/application"
 
 # System scripts
