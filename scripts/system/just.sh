@@ -27,4 +27,7 @@ flatpak-kde-apps
 flatpak-gnome-apps
     curl -s https://raw.githubusercontent.com/Emblem-66/just-scripts/refs/heads/main/flatpak-KDE.sh | bash
 
+gnome-setup
+    curl -s https://raw.githubusercontent.com/Emblem-66/just-scripts/refs/heads/main/gnome-setup.sh | bash
+
 EOF
