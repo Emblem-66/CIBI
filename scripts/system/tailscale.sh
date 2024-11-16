@@ -13,6 +13,6 @@ remove_packages=(
 )
 
 #rpm-ostree uninstall ${remove_packages[@]}
-rpm-ostree install ${install_packages[@]}
+rpm-ostree install --idempotent ${install_packages[@]}
 
 systemctl enable tailscaled
