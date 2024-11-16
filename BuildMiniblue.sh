@@ -18,8 +18,8 @@ curl -s "${SYS}/tailscale.sh" | bash
 curl -s "${SYS}/just.sh" | bash
 
 # Silverblue scripts
-curl -s "${SB}/debloat.sh" | bash
-curl -s "${SB}/packages.sh" | bash
+curl -s "${MB}/debloat.sh" | bash
+curl -s "${MB}/packages.sh" | bash
 
 # Application scripts
 #curl -s "${APP}/steam.sh" | bash
