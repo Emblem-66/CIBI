@@ -7,7 +7,6 @@ rpmfusion=(
     "https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
 )
 #rpm -q rpmfusion-free-release rpmfusion-nonfree-release || rpm-ostree install ${rpmfusion[@]}
-rpm-ostree install --idempotent --force-replacefiles ${rpmfusion[@]}
 
 install_packages=(
 "distrobox"
