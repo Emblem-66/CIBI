@@ -18,4 +18,4 @@ rpm-ostree install --idempotent --force-replacefiles ${install_packages[@]}
 remove_packages=(
 ""
 )
-rpm-ostree install --idempotent --force-replacefiles ${remove_packages[@]}
+#rpm-ostree install --idempotent --force-replacefiles ${remove_packages[@]}
