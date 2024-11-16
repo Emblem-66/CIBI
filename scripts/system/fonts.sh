@@ -2,20 +2,10 @@
 
 set -ouex pipefail
 
-rpmfusion=(
-    "https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm"
-    "https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
-)
-#rpm-ostree install --idempotent --force-replacefiles ${rpmfusion[@]}
-
 install_packages=(
     "ibm-plex-fonts-all"
     "rsms-inter-fonts"
     "levien-inconsolata-fonts"
 )
 
-remove_packages=(
-)
-
-#rpm-ostree uninstall ${remove_packages[@]}
 rpm-ostree install --idempotent ${install_packages[@]}
