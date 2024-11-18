@@ -11,6 +11,8 @@ remove_packages=(
 "kf6-kwallet-libs"
 "kwalletmanager5"
 "pam-kwallet"
+"signon-kwallet-extension"
+"kaccounts-integration-qt6"
 "plasma-welcome"
 "plasma-welcome-fedora"
 )
