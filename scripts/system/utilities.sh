@@ -9,7 +9,7 @@ rpmfusion=(
 #rpm -q rpmfusion-free-release rpmfusion-nonfree-release || rpm-ostree install ${rpmfusion[@]}
 
 install_packages=(
-"corectrl"
+"wireguard-tools"
 )
 
 remove_packages=(
@@ -17,4 +17,4 @@ remove_packages=(
 )
 
 #rpm-ostree uninstall --idempotent ${remove_packages[@]}
-#rpm-ostree install --idempotent ${install_packages[@]}
+rpm-ostree install --idempotent ${install_packages[@]}
