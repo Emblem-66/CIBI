@@ -12,7 +12,7 @@ curl -s "${SYS}/kernel.sh" | bash
 curl -s "${SYS}/mesa-git.sh" | bash
 curl -s "${SYS}/codecs.sh" | bash
 curl -s "${SYS}/fonts.sh" | bash
-#curl -s "${SYS}/utilities.sh" | bash
+curl -s "${SYS}/utilities.sh" | bash
 curl -s "${SYS}/tailscale.sh" | bash
 curl -s "${SYS}/distrobox.sh" | bash
 curl -s "${SYS}/just.sh" | bash
