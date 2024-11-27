@@ -2,7 +2,7 @@
 
 set -ouex pipefail
 
-curl -o /etc/yum.repos.d/_copr_heroic.repo "https://copr.fedorainfracloud.org/coprs/atim/heroic-games-launcher/repo/fedora-rawhide/atim-heroic-games-launcher-fedora-rawhide.repo"
+#curl -o /etc/yum.repos.d/_copr_heroic.repo "https://copr.fedorainfracloud.org/coprs/atim/heroic-games-launcher/repo/fedora-rawhide/atim-heroic-games-launcher-fedora-rawhide.repo"
 
 #wget $(curl -s https://api.github.com/repos/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest | jq -r '.assets[] | select(.name | contains ("rpm")) | .browser_download_url')
 
@@ -19,7 +19,7 @@ install_packages=(
 "gamemode"
 "vkBasalt"
 )
-rpm-ostree install --idempotent --force-replacefiles ${install_packages[@]}
+#rpm-ostree install --idempotent --force-replacefiles ${install_packages[@]}
 
 remove_packages=(
 ""
@@ -29,4 +29,5 @@ remove_packages=(
  
 #wget $(curl -s https://api.github.com/repos/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest | jq -r '.assets[] | select(.name | contains ("rpm")) | .browser_download_url')
 
-#wget -O heroic-latest.rpm $(curl -s https://api.github.com/repos/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest | jq -r '.assets[] | select(.name | contains ("rpm")) | .browser_download_url')
+wget -O heroic-latest.rpm $(curl -s https://api.github.com/repos/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest | jq -r '.assets[] | select(.name | contains ("rpm")) | .browser_download_url')
+dnf install heroic-latest.rpm
