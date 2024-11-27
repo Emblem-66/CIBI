@@ -22,9 +22,24 @@ curl -s "${SB}/debloat.sh" | bash
 curl -s "${SB}/packages.sh" | bash
 
 # Application scripts
-curl -s "${APP}/steam.sh" | bash
-curl -s "${APP}/bottles.sh" | bash
-curl -s "${APP}/heroic.sh" | bash
-curl -s "${APP}/prismlauncher.sh" | bash
+#curl -s "${APP}/steam.sh" | bash
+#curl -s "${APP}/bottles.sh" | bash
+#curl -s "${APP}/heroic.sh" | bash
+#curl -s "${APP}/prismlauncher.sh" | bash
+
+rpmfusion=(
+    "https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm"
+    "https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
+)
+dnf install ${rpmfusion[@]}
+
+install_packages=(
+"steam"
+"goverlay"
+"mangohud"
+"gamemode"
+"vkBasalt"
+)
+dnf install ${install_packages[@]}
 
 rpm -qa | sort
