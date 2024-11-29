@@ -14,7 +14,6 @@ remove_packages=(
 "gnome-shell-extension-apps-menu"
 "gnome-shell-extension-places-menu"
 "gnome-tour"
-"gnome-software"
 "yelp"
 "yelp-libs"
 "yelp-xsl"
