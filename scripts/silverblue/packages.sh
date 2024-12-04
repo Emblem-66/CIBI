@@ -11,6 +11,8 @@ rpmfusion=(
 install_packages=(
 "adw-gtk3-theme"
 "gnome-shell-extension-caffeine"
+"gnome-shell-extension-light-style"
+"gnome-shell-extension-just-perfection"
 )
 
 install_applications=(
