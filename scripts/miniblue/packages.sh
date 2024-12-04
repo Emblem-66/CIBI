@@ -11,6 +11,8 @@ rpm -q rpmfusion-free-release rpmfusion-nonfree-release || rpm-ostree install ${
 install_packages=(
 "adw-gtk3-theme"
 "gnome-shell-extension-caffeine"
+"gnome-shell-extension-light-style"
+"gnome-shell-extension-just-perfection"
 "ffmpegthumbnailer"
 )
 
