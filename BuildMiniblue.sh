@@ -20,5 +20,6 @@ curl -s "${MB}/packages.sh" | bash
 
 dnf install -y --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' --setopt='terra.gpgkey=https://repos.fyralabs.com/terra$releasever/key.asc' terra-release
 dnf install -y anda
+anda list
 
 rpm -qa | sort
