@@ -18,4 +18,6 @@ curl -s "${SYS}/just.sh" | bash
 curl -s "${MB}/debloat.sh" | bash
 curl -s "${MB}/packages.sh" | bash
 
+sudo dnf install -y --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' --setopt='terra.gpgkey=https://repos.fyralabs.com/terra$releasever/key.asc' terra-release
+
 rpm -qa | sort
