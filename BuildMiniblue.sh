@@ -15,8 +15,8 @@ curl -s "${SYS}/distrobox.sh" | bash
 curl -s "${SYS}/just.sh" | bash
 
 # Miniblue scripts
-curl -s "${MB}/debloat.sh" | bash
 curl -s "${MB}/packages.sh" | bash
+curl -s "${MB}/debloat.sh" | bash
 
 dnf install -y --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' --setopt='terra.gpgkey=https://repos.fyralabs.com/terra$releasever/key.asc' terra-release
 dnf install -y anda
